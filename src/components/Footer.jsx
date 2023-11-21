@@ -11,14 +11,14 @@ const Footer = () => {
         <img src="../" alt="Brand Logo" />
       </div>
       <Nav show={!showMainNav}>
-        {/* Secondary Navigation Links */}
+        {/* 세컨드 Navigation Links */}
         <NavButton onClick={() => setShowMainNav(true)}>ai pin</NavButton>
         <NavLink href="/trust">trust</NavLink>
         <NavLink href="/cosmos">cosmos</NavLink>
         <NavLink href="/tech-details">tech details</NavLink>
       </Nav>
       <Nav show={showMainNav}>
-        {/* Main Navigation Links */}
+        {/* 메인 Navigation Links */}
         <NavButton onClick={() => setShowMainNav(false)}>
           <IoIosArrowBack />
           menu
@@ -51,13 +51,17 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  width: 98%;
 `;
 
 const Nav = styled.nav`
   display: flex;
   position: absolute;
+  font-size: large;
   right: 0;
+  margin: auto;
   justify-content: center;
   animation: ${(props) => (props.show ? fadeIn : fadeOut)} 0.5s linear;
   transition: visibility 0.5s linear;
@@ -69,6 +73,9 @@ const NavLink = styled.a`
   text-decoration: none;
   margin: 0 10px;
   cursor: pointer;
+  font-size: 1em;
+  margin-right: 15px;
+  padding-bottom: 3px;
 `;
 
 const NavButton = styled.button`
@@ -79,5 +86,6 @@ const NavButton = styled.button`
   display: flex;
   align-items: center;
   font-size: 1em;
+  margin: 0 10px;
   margin-right: 15px;
 `;

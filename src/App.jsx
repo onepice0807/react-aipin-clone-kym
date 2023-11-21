@@ -1,19 +1,31 @@
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Content from './components/Content';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
-function App() {
+const Layout = () => {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <div className="app-content">
-        <div className="footer-order">
-          <button type="button">Order</button>
-          <span>Starting at $699</span>
-        </div>
-      </div>
+      <Outlet />
       <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Content />} />
+            <Route path="main" element={<Content />} />
+          </Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
