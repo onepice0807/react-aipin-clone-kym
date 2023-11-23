@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ScrollIndicator from './ScrollIndicator';
 
-const Content = () => {
+const AiPinPage = () => {
   const sections = ['section1', 'section2', 'section3', 'section4'];
   return (
     <div className="app-content">
@@ -22,7 +22,7 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default AiPinPage;
 
 const Section = styled.div`
   height: 100vh;
