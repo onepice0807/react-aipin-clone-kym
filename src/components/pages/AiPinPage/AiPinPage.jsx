@@ -1,6 +1,6 @@
-import React from 'react';
+import ScrollIndicator from '../../ScrollIndicator';
 import styled from 'styled-components';
-import ScrollIndicator from './ScrollIndicator';
+import React from 'react';
 
 const AiPinPage = () => {
   const sections = ['section1', 'section2', 'section3', 'section4'];

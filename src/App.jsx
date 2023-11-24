@@ -1,12 +1,15 @@
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
-import './App.css';
-import AiPinPage from './components/AiPinPage';
+import AccessoriesPage from './components/pages/shopPage/AccessoriesPage';
+import TechDetailsPage from './components/pages/AiPinPage/TechDetailsPage';
+import TrustPage from './components/pages/AiPinPage/TrustPage';
+import AiPinPage from './components/pages/AiPinPage/AiPinPage';
+import GiftsPage from './components/pages/shopPage/GiftsPage';
+import MainPage from './components/pages/mainPage/MainPage';
+import Shop from './components/pages/shopPage/index';
+import BottomNav from './components/BottomNav';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import AccessoriesPage from './components/pages/shopPage/AccessoriesPage';
-import GiftsPage from './components/pages/shopPage/GiftsPage';
-import Shop from './components/pages/shopPage/index';
-import MainPage from './components/pages/mainPage/MainPage';
+import './App.css';
 
 const Layout = () => {
   return (
@@ -14,6 +17,7 @@ const Layout = () => {
       <Header />
       <Outlet />
       <Footer />
+      <BottomNav />
     </div>
   );
 };
@@ -28,6 +32,8 @@ function App() {
             <Route index element={<MainPage />} />
             <Route path="main" element={<MainPage />} />
             <Route path="aipin" element={<AiPinPage />} />
+            <Route path="aipin/trust" element={<TrustPage />} />
+            <Route path="aipin/tech-details" element={<TechDetailsPage />} />
             {/* Shop 관련 경로를 여기에 중첩합니다. */}
             <Route path="shop" element={<Shop />}>
               <Route index element={<div>Welcome to the shop!</div>} />

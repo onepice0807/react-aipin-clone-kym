@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import WebFont from 'webfontloader';
 import './index.css';
-import ShopPage from './ShopPage';
+import ShopPage from './shop/ShopPage';
 import AccessoriesPage from './AccessoriesPage';
 import GiftsPage from './GiftsPage';
 
