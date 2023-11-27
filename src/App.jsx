@@ -1,6 +1,6 @@
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
-import AccessoriesPage from './components/pages/shopPage/AccessoriesPage';
 import TechDetailsPage from './components/pages/AiPinPage/TechDetailsPage';
+import BrowsePage from './components/pages/shopPage/BrowsePage';
 import TrustPage from './components/pages/AiPinPage/TrustPage';
 import AiPinPage from './components/pages/AiPinPage/AiPinPage';
 import GiftsPage from './components/pages/shopPage/GiftsPage';
@@ -37,7 +37,7 @@ function App() {
             {/* Shop 관련 경로를 여기에 중첩합니다. */}
             <Route path="shop" element={<Shop />}>
               <Route index element={<div>Welcome to the shop!</div>} />
-              <Route path="accessories" element={<AccessoriesPage />} />
+              <Route path="browse" element={<BrowsePage />} />
               <Route path="gifts" element={<GiftsPage />} />
             </Route>
             {/* 다른 경로들을 추가할 수 있습니다. */}

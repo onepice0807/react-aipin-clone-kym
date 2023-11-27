@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import WebFont from 'webfontloader';
 import './index.css';
 import ShopPage from './shop/ShopPage';
-import AccessoriesPage from './AccessoriesPage';
 import GiftsPage from './GiftsPage';
+import BrowsePage from './BrowsePage';
 
 WebFont.load({
   google: {
@@ -22,11 +22,11 @@ const Banner = ({ title, isSelected, onClick }) => {
 
 const Shop = () => {
   const navigate = useNavigate();
-  const [selectedBanner, setSelectedBanner] = useState('Ai Pin');
+  const [selectedBanner, setSelectedBanner] = useState('Quest');
 
   const handleBannerClick = (banner) => {
     setSelectedBanner(banner);
-    if (banner === 'Ai Pin') {
+    if (banner === 'Quest') {
       navigate('/shop');
     } else {
       navigate(`/shop/${banner.toLowerCase()}`);
@@ -35,11 +35,11 @@ const Shop = () => {
 
   let ContentComponent;
   switch (selectedBanner) {
-    case 'Ai Pin':
+    case '탐색':
       ContentComponent = ShopPage;
       break;
-    case 'Accessories':
-      ContentComponent = AccessoriesPage;
+    case '찾아보기':
+      ContentComponent = BrowsePage;
       break;
     case 'Gifts':
       ContentComponent = GiftsPage;
@@ -52,14 +52,14 @@ const Shop = () => {
     <>
       <div className="banners-container">
         <Banner
-          title="Ai Pin"
-          isSelected={selectedBanner === 'Ai Pin'}
-          onClick={() => handleBannerClick('Ai Pin')}
+          title="탐색"
+          isSelected={selectedBanner === 'Quest'}
+          onClick={() => handleBannerClick('Quest')}
         />
         <Banner
-          title="Accessories"
-          isSelected={selectedBanner === 'Accessories'}
-          onClick={() => handleBannerClick('Accessories')}
+          title="찾아보기"
+          isSelected={selectedBanner === 'Browse'}
+          onClick={() => handleBannerClick('Browse')}
         />
         <Banner
           title="Gifts"

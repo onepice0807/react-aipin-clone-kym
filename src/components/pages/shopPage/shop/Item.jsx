@@ -9,7 +9,7 @@ const Item = ({ product }) => {
       <Swiper
         spaceBetween={10}
         slidesPerView={1}
-        slide
+        slide="true"
         scrollbar={{ draggable: true }}
         navigation
         pagination={{ clickable: true }}

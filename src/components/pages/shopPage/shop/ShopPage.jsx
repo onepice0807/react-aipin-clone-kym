@@ -1,14 +1,11 @@
 import React from 'react';
-import { PRODUCTS } from '../../../data/Product';
-import Item from './Item';
 import styled from 'styled-components';
+import GameList from './GameList';
 
 const ShopPage = () => {
   return (
     <Container>
-      {PRODUCTS.map((product) => (
-        <Item key={product.id} product={product} />
-      ))}
+      <GameList />
     </Container>
   );
 };

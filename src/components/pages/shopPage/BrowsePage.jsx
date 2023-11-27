@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import GameDetail from './shop/GameDetail';
 
-const GiftsPage = () => {
+const BrowsePage = () => {
   return (
-    <GiftsWrapper>
+    <BrowseWrapper>
       <GameDetail />
-    </GiftsWrapper>
+    </BrowseWrapper>
   );
 };
 
-export default GiftsPage;
+export default BrowsePage;
 
-const GiftsWrapper = styled.div``;
+const BrowseWrapper = styled.div``;
