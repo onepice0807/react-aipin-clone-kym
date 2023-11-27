@@ -35,10 +35,10 @@ const Shop = () => {
 
   let ContentComponent;
   switch (selectedBanner) {
-    case '탐색':
+    case 'Quest':
       ContentComponent = ShopPage;
       break;
-    case '찾아보기':
+    case 'Browse':
       ContentComponent = BrowsePage;
       break;
     case 'Gifts':
