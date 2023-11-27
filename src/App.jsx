@@ -7,7 +7,6 @@ import GiftsPage from './components/pages/shopPage/GiftsPage';
 import MainPage from './components/pages/mainPage/MainPage';
 import Shop from './components/pages/shopPage/index';
 import BottomNav from './components/BottomNav';
-import Footer from './components/Footer';
 import Header from './components/Header';
 import './App.css';
 
@@ -16,7 +15,6 @@ const Layout = () => {
     <div>
       <Header />
       <Outlet />
-      <Footer />
       <BottomNav />
     </div>
   );

@@ -35,4 +35,40 @@ export const GAMES = [
       'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
     ],
   },
+  {
+    id: '04',
+    name: 'Game Name4',
+    price: '29.99',
+    description: 'Exciting game with thrilling gameplay.',
+    gameDeveloperId: 'dev04',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '05',
+    name: 'Game Name5',
+    price: '59.99',
+    description: 'Exciting game with thrilling gameplay.',
+    gameDeveloperId: 'dev05',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '06',
+    name: 'Game Name6',
+    price: '69.99',
+    description: 'Exciting game with thrilling gameplay.',
+    gameDeveloperId: 'dev06',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
 ];

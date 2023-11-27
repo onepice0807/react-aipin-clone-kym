@@ -13,7 +13,7 @@ const ShopPage = () => {
 export default ShopPage;
 
 const Container = styled.div`
-  display: flex;
+  display: row;
   width: 100%;
   height: 100vh;
 `;
