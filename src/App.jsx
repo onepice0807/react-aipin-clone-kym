@@ -9,6 +9,7 @@ import Shop from './components/pages/shopPage/index';
 import BottomNav from './components/BottomNav';
 import Header from './components/Header';
 import './App.css';
+import GameDetailPage from './components/pages/shopPage/shop/GameDetailPage';
 
 const Layout = () => {
   return (
@@ -38,7 +39,8 @@ function App() {
               <Route path="browse" element={<BrowsePage />} />
               <Route path="gifts" element={<GiftsPage />} />
             </Route>
-            {/* 다른 경로들을 추가할 수 있습니다. */}
+            <Route path="/shop/detail/:gameId" element={<GameDetailPage />} />
+            {/* 다른 경로들 예정 */}
           </Route>
         </Routes>
       </div>

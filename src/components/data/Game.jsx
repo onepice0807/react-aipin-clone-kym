@@ -1,6 +1,78 @@
 export const GAMES = [
   {
     id: '01',
+    name: 'Cyber Quest 2077',
+    price: '59.99',
+    description: 'Futuristic adventure in a dystopian world.',
+    gameDeveloperId: 'dev01',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '02',
+    name: 'Galaxy Explorers',
+    price: '39.99',
+    description: 'Space exploration and adventure game.',
+    gameDeveloperId: 'dev02',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '03',
+    name: 'The Lost Kingdom',
+    price: '49.99',
+    description: 'Epic journey through a mystical kingdom.',
+    gameDeveloperId: 'dev03',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '04',
+    name: 'Racers Unleashed',
+    price: '59.99',
+    description: 'High-speed racing action game.',
+    gameDeveloperId: 'dev04',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '05',
+    name: 'Shadow of the Empire',
+    price: '44.99',
+    description: 'Strategic empire building in a medieval fantasy world.',
+    gameDeveloperId: 'dev05',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '06',
+    name: 'Mystery of the Ancient Ruins',
+    price: '49.99',
+    description: 'Explore ancient ruins and uncover hidden secrets.',
+    gameDeveloperId: 'dev06',
+    imageUrl: [
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+      'https://cdn.gameple.co.kr/news/photo/201802/140113_146014_5945.png',
+    ],
+  },
+  {
+    id: '07',
     name: 'Game Name',
     price: '29.99',
     description: 'Exciting game with thrilling gameplay.',
@@ -12,7 +84,7 @@ export const GAMES = [
     ],
   },
   {
-    id: '02',
+    id: '08',
     name: 'Game Name2',
     price: '59.99',
     description: 'Exciting game with thrilling gameplay.',
@@ -24,7 +96,7 @@ export const GAMES = [
     ],
   },
   {
-    id: '03',
+    id: '09',
     name: 'Game Name3',
     price: '69.99',
     description: 'Exciting game with thrilling gameplay.',
@@ -36,7 +108,7 @@ export const GAMES = [
     ],
   },
   {
-    id: '04',
+    id: '10',
     name: 'Game Name4',
     price: '29.99',
     description: 'Exciting game with thrilling gameplay.',
@@ -48,7 +120,7 @@ export const GAMES = [
     ],
   },
   {
-    id: '05',
+    id: '11',
     name: 'Game Name5',
     price: '59.99',
     description: 'Exciting game with thrilling gameplay.',
@@ -60,7 +132,7 @@ export const GAMES = [
     ],
   },
   {
-    id: '06',
+    id: '12',
     name: 'Game Name6',
     price: '69.99',
     description: 'Exciting game with thrilling gameplay.',

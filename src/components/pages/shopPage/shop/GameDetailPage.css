@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto; /* 상단과 하단의 여백은 15px, 좌우는 자동으로 설정하여 중앙 정렬 */
+  padding: 10px;
+  background-color: #ffffff;
+  width: 350px; /* 너비를 500px로 설정 */
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}

@@ -1,24 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import WebFont from 'webfontloader';
 import './index.css';
-import ShopPage from './shop/ShopPage';
-import GiftsPage from './GiftsPage';
-import BrowsePage from './BrowsePage';
-
-WebFont.load({
-  google: {
-    families: ['Roboto:400,700'],
-  },
-});
-
-const Banner = ({ title, isSelected, onClick }) => {
-  return (
-    <div className={`banner ${isSelected ? 'selected' : ''}`} onClick={onClick}>
-      {title}
-    </div>
-  );
-};
+import ShopContent, { Banner } from './shop/Banner';
 
 const Shop = () => {
   const navigate = useNavigate();
@@ -32,21 +15,6 @@ const Shop = () => {
       navigate(`/shop/${banner.toLowerCase()}`);
     }
   };
-
-  let ContentComponent;
-  switch (selectedBanner) {
-    case 'Quest':
-      ContentComponent = ShopPage;
-      break;
-    case 'Browse':
-      ContentComponent = BrowsePage;
-      break;
-    case 'Gifts':
-      ContentComponent = GiftsPage;
-      break;
-    default:
-      ContentComponent = ShopPage;
-  }
 
   return (
     <>
@@ -67,7 +35,7 @@ const Shop = () => {
           onClick={() => handleBannerClick('Gifts')}
         />
       </div>
-      <ContentComponent />
+      <ShopContent selectedBanner={selectedBanner} />
     </>
   );
 };

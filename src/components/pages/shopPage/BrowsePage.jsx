@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import GameDetail from './shop/GameDetail';
+import GameList from './shop/GameList';
 
 const BrowsePage = () => {
   return (
     <BrowseWrapper>
-      <GameDetail />
+      <GameList />
     </BrowseWrapper>
   );
 };
 
 export default BrowsePage;
 
-const BrowseWrapper = styled.div``;
+const BrowseWrapper = styled.div`
+  height: 5000px;
+`;
