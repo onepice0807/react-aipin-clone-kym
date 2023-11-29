@@ -1,4 +1,4 @@
-.container {
+.detail_main {
   display: flex;
   justify-content: center;
   margin: 15px auto; /* 상단과 하단의 여백은 15px, 좌우는 자동으로 설정하여 중앙 정렬 */
